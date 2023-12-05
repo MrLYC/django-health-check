@@ -8,7 +8,7 @@ from .collector import DjangoHealthCheckCollector
 
 
 class HealthCheckConfig(AppConfig):
-    name = "health_check.contrib.prometheus"
+    name = "django_health_check_prometheus"
 
     def ready(self):
         collector = DjangoHealthCheckCollector()
